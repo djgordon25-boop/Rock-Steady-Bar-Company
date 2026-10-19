@@ -200,6 +200,11 @@ figcaption {
 .grid-auto-wide { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 .grid-auto-narrow { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; }
 
+.rv-grid{display:block;columns:1;column-gap:20px}
+.rv-grid .rv-card{break-inside:avoid;margin-bottom:20px}
+@media (min-width:600px){.rv-grid{columns:2}}
+@media (min-width:900px){.rv-grid{columns:3}}
+
 /* — about — */
 .about-grid {
   display: grid; grid-template-columns: minmax(220px, 320px) 1fr;
@@ -226,5 +231,4 @@ figcaption {
 .rv-featured p{font-size:clamp(17px,2vw,20px)}
 .rv-photo{margin:0 0 4px;aspect-ratio:4/3;overflow:hidden}
 .rv-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.rv-grid{gap:20px}
 .rv-link{color:var(--color-accent);font-weight:600;text-decoration:underline;text-underline-offset:4px}
